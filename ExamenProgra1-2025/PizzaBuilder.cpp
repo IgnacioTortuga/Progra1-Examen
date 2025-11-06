@@ -79,7 +79,7 @@ void PizzaBuilder::SelectCheese()
     std::cout << "\n--- Selecting Tomatoes ---" << std::endl;
 
     // TODO: Reusar esta linea, pero con su propio Repositorio.
-    IngredientSelector<CheeseRepository> selector(CheeseRepo_, availableTomatoes_, "Cheese");
+    IngredientSelector<CheeseRepository> selector(cheeseRepo_, availableTomatoes_, "Cheese");
 
     while (true) {
         selector.DisplayAvailableIngredients();
