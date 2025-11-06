@@ -9,6 +9,8 @@ void PizzaBuilder::BuildPizza() {
     std::cout << "Let's build your pizza!" << std::endl;
 
     SelectTomatoes();
+    SelectHerb();
+
 	SelectMeat();  
 	SelectCheese();
     // TODO
@@ -100,9 +102,27 @@ void PizzaBuilder::SelectCheese()
 // // Resolver.    
 //}
 //
-//void PizzaBuilder::SelectHerb() {
-//    // Resolver.    
-//}
+void PizzaBuilder::SelectHerb() {
+    std::cout << "\n--- Selecting Herbs ---" << std::endl;
+
+    // TODO: Reusar esta linea, pero con su propio Repositorio.
+    IngredientSelector<HerbsRepository> selector(herbsRepo_, availableHerbs_, "Herbs");
+
+    while (true) {
+        selector.DisplayAvailableIngredients();
+
+        std::cout << "\nEnter tomato type (or 'done' to finish): ";
+        std::string userChoice;
+        std::getline(std::cin, userChoice);
+
+        if (userChoice == "done" || userChoice == "DONE") {
+            break;
+        }
+
+        selector.AddIngredientToPizza(userChoice, selectedIngredients_);
+    }
+}
+
 //
 //void PizzaBuilder::SelectMeat() {
 //    // Resolver.    
