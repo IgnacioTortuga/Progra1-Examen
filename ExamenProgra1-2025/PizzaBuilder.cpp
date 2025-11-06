@@ -84,7 +84,7 @@ void PizzaBuilder::SelectCheese()
     while (true) {
         selector.DisplayAvailableIngredients();
 
-        std::cout << "\nEnter tomato type (or 'done' to finish): ";
+        std::cout << "\nEnter cheese type (or 'done' to finish): ";
         std::string userChoice;
         std::getline(std::cin, userChoice);
 
