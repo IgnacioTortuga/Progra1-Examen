@@ -33,6 +33,9 @@
     <ClCompile Include="HebrsRepository.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CheeseRepository.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="MeatsRepository.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
