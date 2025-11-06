@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DataLoader.cpp" />
+    <ClCompile Include="HebrsRepository.cpp" />
     <ClCompile Include="IngredientSelector.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PizzaBuilder.cpp" />
@@ -131,6 +132,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataLoader.h" />
+    <ClInclude Include="HerbsRepository.h" />
     <ClInclude Include="IngredientSelector.h" />
     <ClInclude Include="PizzaBuilder.h" />
     <ClInclude Include="TomatoesRepository.h" />
